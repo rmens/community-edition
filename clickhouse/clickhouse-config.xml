@@ -3,6 +3,9 @@
         <level>warning</level>
         <console>true</console>
     </logger>
+    
+    <!-- Don't listen on IPv6 since it's not avaiable in Docker -->
+    <listen_host>0.0.0.0</listen_host>
 
     <!-- Stop all the unnecessary logging -->
     <query_thread_log remove="remove"/>
